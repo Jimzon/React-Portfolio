@@ -1,25 +1,29 @@
 import React from "react";
 import "./intro.css";
+import bg from "../../assets/image.png";
+import btnImg from "../../assets/hireme.png";
 import { Link } from "react-scroll";
 
 const Intro = () => {
   return (
     <section id="intro">
       <div className="introContent">
-        <p className="introText">You are now entering in my domain</p>
-        <span className="introName">
-          I am Grand <span>Dexter Echalico...</span>
+        <span className="hello">Hello,</span>
+        <span className="introText">
+          I'm <span className="introName">Jimzon</span> <br />
+          Web Developer
         </span>
-        <h1 className="introMain">Welcome to my World</h1>
-      </div>
-      <div>
+        <p className="introPara">
+          I'm a skill web developer and UI/UX designer
+        </p>
         <Link>
-          <button className="btn">Portfolio</button>
-        </Link>
-        <Link>
-          <button className="btn">Contact Me</button>
+          <button className="btn">
+            <img src={btnImg} alt="" />
+            Hire Me
+          </button>{" "}
         </Link>
       </div>
+      <img scr={bg} alt="Profile" className="bg" />
     </section>
   );
 };
