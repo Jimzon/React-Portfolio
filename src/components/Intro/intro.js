@@ -18,12 +18,13 @@ const Intro = () => {
         </p>
         <Link>
           <button className="btn">
-            <img src={btnImg} alt="" />
+            <img className="btnImg" src={btnImg} alt="" />
             Hire Me
-          </button>{" "}
+          </button>
         </Link>
       </div>
-      <img scr={bg} alt="Profile" className="bg" />
+      <img className="bg" src={bg} alt="" />
+      Hire Me
     </section>
   );
 };
