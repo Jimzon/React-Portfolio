@@ -4,6 +4,10 @@ import Walmart from "../../assets/walmart.png";
 import Adobe from "../../assets/adobe.png";
 import Microsoft from "../../assets/microsoft.png";
 import Facebook from "../../assets/facebook.png";
+import FacebookIcon from "../../assets/facebook-icon.png";
+import TwitterIcon from "../../assets/twitter.png";
+import YouTubeIcon from "../../assets/youtube.png";
+import InstagramIcon from "../../assets/twitter.png";
 
 const Contact = () => {
   return (
@@ -21,7 +25,31 @@ const Contact = () => {
           <img className="clientImg" src={Facebook} alt="Client" />
         </div>
       </div>
-      <div id="contact"></div>
+      <div id="contact">
+        <h1 className="contactPageTitle">Contact Me</h1>
+        <span className="contactDec">
+          Please fill out the form below to discuss any work opportunities
+        </span>
+        <form className="contactForm">
+          <input className="name" type="text" placeholder="Your Name" />
+          <input className="email" type="email" placeholder="Your Email" />
+          <textarea
+            className="msg"
+            name="message"
+            rows="5"
+            placeholder="Your Message"
+          ></textarea>
+          <button className="submitBtn" type="submit" value="Send">
+            Submit
+          </button>
+          <div className="links">
+            <img className="link" src="" alt="" />
+            <img className="link" src="" alt="" />
+            <img className="link" src="" alt="" />
+            <img className="link" src="" alt="" />
+          </div>
+        </form>
+      </div>
     </section>
   );
 };
