@@ -18,14 +18,15 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        "service_moubnwk",
+        "template_m98x6mq",
         form.current,
-        "YOUR_PUBLIC_KEY"
+        "9iw1xvnw7z9EKU34KYt5D"
       )
       .then(
         (result) => {
           console.log(result.text);
+          alert("email sent");
         },
         (error) => {
           console.log(error.text);
@@ -54,8 +55,18 @@ const Contact = () => {
           Please fill out the form below to discuss any work opportunities
         </span>
         <form className="contactForm" ref={form} onSubmit={sendEmail}>
-          <input className="name" type="text" placeholder="Your Name" />
-          <input className="email" type="email" placeholder="Your Email" />
+          <input
+            className="name"
+            type="text"
+            placeholder="Your Name"
+            name="your_name"
+          />
+          <input
+            className="email"
+            type="email"
+            placeholder="Your Email"
+            name="your_email"
+          />
           <textarea
             className="msg"
             name="message"
