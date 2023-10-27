@@ -12,6 +12,29 @@ const Skills = () => {
         I specialize in web design, crafting beautiful and user-friendly
         websites, while also diving into programming to bring them to life
       </span>
+      <div className="skillBars">
+        <div className="skillBar">
+          <img className="skillBarImg" src={UIDesign} alt="" />
+          <div className="skillBarText">
+            <h2></h2>
+            <p></p>
+          </div>
+        </div>
+        <div className="skillBar">
+          <img className="skillBarImg" src={WebDesign} alt="" />
+          <div className="skillBarText">
+            <h2></h2>
+            <p></p>
+          </div>
+        </div>
+        <div className="skillBar">
+          <img className="skillBarImg" src={AppDesign} alt="" />
+          <div className="skillBarText">
+            <h2></h2>
+            <p></p>
+          </div>
+        </div>
+      </div>
     </section>
   );
 };
