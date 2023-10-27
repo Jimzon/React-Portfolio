@@ -67,8 +67,13 @@ const Navbar = () => {
         <img src={contactImg} alt="" className="desktopMenuImg" /> Contact Me
       </button>
 
-      <img src={menu} alt="Menu" className="mobMenu" />
-      <div className="navMenu">
+      <img
+        src={menu}
+        alt="Menu"
+        className="mobMenu"
+        onClick={() => setShowMenu(!showMenu)}
+      />
+      <div className="navMenu" style={{ display: showMenu ? "flex" : "none" }}>
         <Link
           activeClass="active"
           to="intro"
@@ -77,6 +82,7 @@ const Navbar = () => {
           offset={-100}
           duration={500}
           className="listItem"
+          onClick={() => setShowMenu(false)}
         >
           Home
         </Link>
@@ -88,6 +94,7 @@ const Navbar = () => {
           offset={-50}
           duration={500}
           className="listItem"
+          onClick={() => setShowMenu(false)}
         >
           About
         </Link>
@@ -99,6 +106,7 @@ const Navbar = () => {
           offset={-50}
           duration={500}
           className="listItem"
+          onClick={() => setShowMenu(false)}
         >
           Portfolio
         </Link>
@@ -110,6 +118,7 @@ const Navbar = () => {
           offset={-50}
           duration={500}
           className="listItem"
+          onClick={() => setShowMenu(false)}
         >
           Clients
         </Link>
@@ -121,6 +130,7 @@ const Navbar = () => {
           offset={-50}
           duration={500}
           className="listItem"
+          onClick={() => setShowMenu(false)}
         >
           Contact
         </Link>
