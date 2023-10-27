@@ -12,6 +12,7 @@ function App() {
       <Skills />
       <Works />
       <Contact />
+      <Footer />
     </div>
   );
 }
