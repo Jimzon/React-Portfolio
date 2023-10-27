@@ -7,7 +7,7 @@ import Facebook from "../../assets/facebook.png";
 
 const Contact = () => {
   return (
-    <section className="contactPage">
+    <section id="contactPage">
       <div id="clients">
         <h1 className="contactPageTitle">My Clients</h1>
         <p className="clientDesc">
@@ -15,10 +15,10 @@ const Contact = () => {
           companies I have worked with includes
         </p>
         <div className="clientImgs">
-          <img className="clientImg" src={Walmart} alt="" />
-          <img className="clientImg" src={Adobe} alt="" />
-          <img className="clientImg" src={Microsoft} alt="" />
-          <img className="clientImg" src={Facebook} alt="" />
+          <img className="clientImg" src={Walmart} alt="Client" />
+          <img className="clientImg" src={Adobe} alt="Client" />
+          <img className="clientImg" src={Microsoft} alt="Client" />
+          <img className="clientImg" src={Facebook} alt="Client" />
         </div>
       </div>
       <div id="contact"></div>
