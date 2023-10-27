@@ -9,8 +9,8 @@ import Portfolio6 from "../../assets/portfolio-6.png";
 
 const Works = () => {
   return (
-    <section id="work">
-      <h2 className="workstitle">My Portfolio</h2>
+    <section id="works">
+      <h2 className="worksTitle">My Portfolio</h2>
       <span>
         I take pride on my works as UI/UX designer and fullstack web developer
       </span>
@@ -22,6 +22,7 @@ const Works = () => {
         <img className="worksImg" src={Portfolio5} alt="" />
         <img className="worksImg" src={Portfolio6} alt="" />
       </div>
+      <button className="workBtn">See More</button>
     </section>
   );
 };
