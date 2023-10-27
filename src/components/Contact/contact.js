@@ -7,7 +7,7 @@ import Facebook from "../../assets/facebook.png";
 import FacebookIcon from "../../assets/facebook-icon.png";
 import TwitterIcon from "../../assets/twitter.png";
 import YouTubeIcon from "../../assets/youtube.png";
-import InstagramIcon from "../../assets/twitter.png";
+import InstagramIcon from "../../assets/instagram.png";
 
 const Contact = () => {
   return (
@@ -43,10 +43,10 @@ const Contact = () => {
             Submit
           </button>
           <div className="links">
-            <img className="link" src="" alt="" />
-            <img className="link" src="" alt="" />
-            <img className="link" src="" alt="" />
-            <img className="link" src="" alt="" />
+            <img className="link" src={FacebookIcon} alt="Facebook" />
+            <img className="link" src={TwitterIcon} alt="Twitter" />
+            <img className="link" src={YouTubeIcon} alt="YouTube" />
+            <img className="link" src={InstagramIcon} alt="Instagram" />
           </div>
         </form>
       </div>
