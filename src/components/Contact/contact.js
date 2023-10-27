@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./contact.css";
 import Walmart from "../../assets/walmart.png";
 import Adobe from "../../assets/adobe.png";
@@ -8,8 +8,31 @@ import FacebookIcon from "../../assets/facebook-icon.png";
 import TwitterIcon from "../../assets/twitter.png";
 import YouTubeIcon from "../../assets/youtube.png";
 import InstagramIcon from "../../assets/instagram.png";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "YOUR_SERVICE_ID",
+        "YOUR_TEMPLATE_ID",
+        form.current,
+        "YOUR_PUBLIC_KEY"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <section id="contactPage">
       <div id="clients">
@@ -30,7 +53,7 @@ const Contact = () => {
         <span className="contactDec">
           Please fill out the form below to discuss any work opportunities
         </span>
-        <form className="contactForm">
+        <form className="contactForm" ref={form} onSubmit={sendEmail}>
           <input className="name" type="text" placeholder="Your Name" />
           <input className="email" type="email" placeholder="Your Email" />
           <textarea
