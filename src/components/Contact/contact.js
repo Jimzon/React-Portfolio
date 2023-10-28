@@ -26,6 +26,7 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
+          e.target.reset();
           alert("email sent");
         },
         (error) => {
@@ -65,7 +66,7 @@ const Contact = () => {
             className="email"
             type="email"
             placeholder="Your Email"
-            name="your_email"
+            name="from_email"
           />
           <textarea
             className="msg"
